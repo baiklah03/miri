@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Operation Record Form</h1>
+    <form id="operation-form">
+      <!-- Utility Consumption Section -->
+      <h2>Utility Consumption</h2>
+      <table>
+        <tr>
+          <th>IPS</th>
+          <th>Electrical (kWH)</th>
+          <th>Water (m³)</th>
+        </tr>
+        <tr>
+          <td><input type="text" name="ips" placeholder="IPS"></td>
+          <td><input type="number" name="electrical" placeholder="Electrical"></td>
+          <td><input type="number" name="water" placeholder="Water"></td>
+        </tr>
+      </table>
+
+      <!-- Volume of Influent & Effluent Section -->
+      <h2>Volume of Influent & Effluent</h2>
+      <label for="influent_volume">Influent Volume (m³):</label>
+      <input type="number" id="influent_volume" name="influent_volume">
+      <label for="effluent_volume">Effluent Volume (m³):</label>
+      <input type="number" id="effluent_volume" name="effluent_volume">
+
+      <!-- Comments/Findings Section -->
+      <h2>Comments/Findings</h2>
+      <textarea id="comments" name="comments" rows="4" placeholder="Enter comments or findings..."></textarea>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
